@@ -1,0 +1,155 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background: #313131;
+}
+.box {
+    background: #313131;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.welcome {
+    /* top: 50%; */
+    position: static;
+    width:max-content;
+    height: 4.92em;
+    font-family: 'Inter';
+    color: #8B8B8C;
+    font-style: normal;
+    font-weight: 24em;
+    font-size:2.5em;
+    
+    /* font-size: clamp(34px, 10vw, 34px); */
+/*     overflow-y:hidden; */
+    line-height: 2.5em;
+    padding-top:80vh;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.wrap {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+    flex-wrap: wrap;
+
+  
+}
+    
+.welcome .title {
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+    display:flex;
+    width: fit-content;
+    font-size: 1.8em;
+    /* min-width: max-content; */
+}
+
+
+.welcome .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+/*     gap: 10px; */
+    color: #fff;
+    overflow: visible;
+    line-height: 3em;
+    width: 35%;
+    height: 1.5em;
+    font-size:.37em;
+/*     top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    background: #000000;
+    border-radius: 6px;
+
+}
+.welcome .button:hover{
+    color: #dbb121;
+    box-shadow: 0 4px 8px 0 #7e6e30, 0 6px 20px 0 #7e6e30;
+    
+}
+main {
+    margin: 0px;
+    height: 100vh;
+    background: #313131;
+}
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;  
+}
+.navbar{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center ;
+    align-items: center;
+    padding:5px;
+    border-radius: 6px;
+/*     display:inline-flex; */
+    width: 58%;
+    margin: 6em;
+    height: 30px;
+/*     position: absolute; */
+    
+    background: #000000;
+    box-shadow: 0 1px 2px 0 #4b4d4f, 0 1.5px 5px 0 #4b4d4f;
+}
+.navbar a{
+  margin:55px;
+  color:#dbb121;
+  text-decoration: none;
+
+  
+}
+.separator{
+  
+  width: 12.73px;
+  height: 23.99px;
+  background: #626469;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  border-radius: 28px;
+}
+.navbar a:hover{
+    color: #7e6e30;
+  
+}
+.aboutcard{
+    display: inline-block;
+/*     position: absolute; */
+    align-self: center;
+    justify-content: center;
+    align-content:center ;
+    align-items: center; 
+    width: 530px;
+    background: #7e6e30;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome .title {
+    /* color: blue; */
+    font-size:.8em;
+    overflow-y:hidden;
+  }
+}

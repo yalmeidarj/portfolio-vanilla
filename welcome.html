@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yalmeida</title>
+    <link rel="stylesheet" href="portfolio_vanilla.css">
+
+</head>
+<body >
+    <header class="box" >
+      <div id="animation-bg" >  
+        <div class="welcome">      
+          <div class="wrap">        
+            <h1 class="title" >
+                Software Developer
+            </h1>
+            <button onclick="scrollToId('aboutMe')"  class="button"><a href="#aboutMe"></a>Get to know me
+            </button>          
+          </div>              
+        </div>
+      </div>  
+    </header>
+    <main>
+      <div id="aboutMe" class="aboutMe" section="aboutMe">
+        <div class="navbar">
+            <a href="#aboutMe">About Me</a> 
+              <div class="separator">              
+              </div>  
+            <a class="work" href="#">My Work</a>
+              <div  class="separator">  
+              </div>   
+            <a href="#">Contact</a>
+        </div>
+        <div class="aboutcard">
+          
+        </div>
+      
+      </div>
+    </main>
+
+</body>
+  <script>
+    let box = document.querySelector('.box');
+    let docHeight = box.offsetHeight;
+    console.log({ docHeight });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="vanta.js"></script>
+</html>

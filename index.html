@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="portfolio_vanilla.css">
 
 </head>
-<body >
+
+<body>
     <header class="box" >
       <div id="animation-bg" >  
         <div class="welcome">      
@@ -22,23 +23,23 @@
         </div>
       </div>  
     </header>
-    <main >
-      <div section="aboutMe" id="aboutMe">
-        <div  class="navbar">
+    <main  id="main">
+         <div  class="navbar">
             <a onclick="scrollToId('aboutMe')" href="#aboutMe">About Me</a> 
               <div class="separator">              
               </div>  
-            <a class="work" href="#">My Work</a>
+            <a onclick="scrollToId('myWork')" href="#myWork">My Work</a>
               <div  class="separator">  
               </div>   
-            <a href="#">Contact</a>
-        </div>
+            <a onclick="scrollToId('contact')" href="#contact">Contact</a>
+        </div>     
+      <div section="aboutMe" id="aboutMe">
+
         <div class="aboutcard">
           <div class="container">
-<!--             <div class="titleBox"> -->
-              <div class="picture"></div>
+
+            <div class="picture"></div>
             <div class="aboutTitle">Yuri Almeida <span>Software Developer</span></div>
-<!--          </div> -->
             <button onclick="window.open('Yuri_Almeida_Resume.pdf')"  class="resume"><a class="resumeTxt"  download="Yuri_Almeida_Resume.pdf"></a> See Resume</button>
             <div class="description">
               Hello! 👋 I am a developer from Rio de Janeiro/ Brasil, currently located in Toronto. I am a Full Stack Developer with focus on the Backend.Hello! I am a developer from Rio de Janeiro/ Brasil, currently located in Toronto. I am a Full Stack Developer with focus on the Backend.
@@ -52,9 +53,48 @@ Hello! I am a developer from Rio de Janeiro/ Brasil, currently located in Toront
           
         </div>
       </div>
+      <section class="myWork" id="myWork">
+        <div  class="container2">
+          <div class="myWorkCard fade">1</div>
+          <div class="myWorkCard fade">2</div>
+          <div class="myWorkCard fade">3</div>
+        <div class="dots">
+            <div class="dot" onclick="currentSlide(1)"></div> 
+            <div class="dot" onclick="currentSlide(2)"></div> 
+            <div class="dot" onclick="currentSlide(3)"></div> 
+          <a class="prev"> 
+<a class="next" onclick="plusSlides(1)">❯</a>
+        </div>          
+        </div>
+        
+      </section>
+      <section class="contact" id="contact">
+        <div class="contactCard">
+          <div class="messageMeTxt"><h1>Check out my social media, or leave me a message. I’d be happy to get in touch!</h1></div>
+          <div class="socialMedia">
+            <a href="https://github.com/yalmeidarj" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-github"></i></a>
+            <a href="mailto: yalmeida.rj@gmail.com" target="_blank" rel="noopener noreferrer" class=""><i class="fa-sharp fa-solid fa-at"></i></a>
+            <a href="https://ca.linkedin.com/in/yuri-rocha-de-almeida-32748a55" target="_blank" rel="noopener noreferrer" class=""><i class="fa-brands fa-linkedin-in"></i></a></i>
+          </div>
+          <form action="">
+            <div class="email">
+              <input type="text" id="Email" name="Email" placeholder="   Email...">  
+             </div>
+            <textarea rows="12" cols="12"placeholder=" Type your message..."></textarea>
+
+            <div class="sendButton">
+              <button>Send</button>
+            </div>
+            
+           </form>
+        </div>
+        
+      </section>
     </main>
+    
 
 </body>
+  <script src="https://kit.fontawesome.com/32cf185095.js" crossorigin="anonymous"></script>
   <script>
     let box = document.querySelector('.box');
     let docHeight = box.offsetHeight;
@@ -63,3 +103,4 @@ Hello! I am a developer from Rio de Janeiro/ Brasil, currently located in Toront
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   <script src="vanta.js"></script>
+

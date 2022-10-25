@@ -61,6 +61,21 @@ VANTA.NET( {
     maxDistance: 12.00,
     spacing: 18.00
 });
+VANTA.NET( {
+    el: '#skills',
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: document.querySelector('.box').offsetHeight,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: '#7e6e30',
+    backgroundColor: '#313131',
+    points: 12.00,
+    maxDistance: 12.00,
+    spacing: 18.00
+});
 function scrollToId(eleId) {
   const element = document.getElementById(eleId);
   element.scrollIntoView();

@@ -1,16 +1,20 @@
 html{
   scroll-behavior: smooth;
+  
 }
 
 body {
     margin: 0px;
     height: 100vh;
+    width:100vw;
     background: #313131;
-    font-size:1em;
+    overflow-x: hidden;
+/*     font-size:1em; */
 }
 .box {
     background: #313131;
     min-height: 100vh;
+    width:100vw;
     position: relative;
 }
 
@@ -47,7 +51,6 @@ section{
     align-content:center ;
     align-items: center;
     flex-wrap: wrap;
-
   
 }
     
@@ -89,6 +92,10 @@ section{
     box-shadow: 0 4px 8px 0 #7e6e30, 0 6px 20px 0 #7e6e30;
     
 }
+.afterPage{
+  width:100%;
+  height:40vh;
+}
 #aboutMe {
     margin-top: 20px;
     height: 100vh;
@@ -96,9 +103,7 @@ section{
     display: grid;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 15% 70% 15%;
-    justify-items: center;
-
-   
+    justify-items: center;   
     
   
 }
@@ -155,6 +160,7 @@ section{
 .aboutcard{
     grid-column-start: 2;
     grid-row-start: 2;
+    top: 10em;
     margin-top: 10em;
     align-self: center;
     justify-content: center;
@@ -272,10 +278,8 @@ section{
     grid-column-start: 2;
     grid-row-start: 2;
     margin-top: 10em;
-/*     align-self: center;
-    justify-content: center;
-    align-content:center ;
-    align-items: center;  */
+    align-self: center;
+
     width: auto;
     max-width: 600px;
     width: auto;
@@ -287,14 +291,15 @@ section{
     background: #282A2C;
     grid-template-columns: 5% 25% 70%;
     grid-template-rows: 40% 20% 40%;
-/*     align-items: stretch; */
+
+    align-items: stretch;
 }
-.messageMeTxt{
+/* .messageMeTxt{
   width: auto;
   justify-content: end;
   align-items: end;
   
-}
+} */
 
 .messageMeTxt h1 {
   grid-column-start: 1;
@@ -415,9 +420,9 @@ section{
     grid-column-start: 2;
     grid-row-start: 2;
     margin-top: 10em;
-    min-width: 55%;
+    min-width: 350px;
     max-width: 600px;
-    width: auto;
+/*     width: auto; */
     min-height: 480px;
     padding:;
     background: #282A2C;

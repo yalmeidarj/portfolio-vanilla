@@ -171,10 +171,12 @@ section{
     padding-bottom:50px;
     border-radius: 31px;
     background: #282A2C;
+    opacity:0.8;
 }
 .container{
   
   display: flex;
+  
   flex-wrap: wrap;
   justify-content: center;
   flex-flow: column wrap;
@@ -183,7 +185,7 @@ section{
 }
 
 .picture{
-  
+
   margin-left: 2.1em;
   margin-top: 2.1em;
   width:11.5em;
@@ -277,12 +279,12 @@ section{
     grid-row-start: 2;
     margin-top: 10em;
     align-self: center;
-
+    opacity: .9;
     width: auto;
     max-width: 600px;
     width: auto;
     min-height: 640px;
-    font-size:1.3em;
+    /* font-size:1.3em; */
     padding:;
 /*     padding-bottom:50px; */
     border-radius: 31px;
@@ -308,7 +310,7 @@ section{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.7em;
   padding:.8em;
   color: #FFFFFF;
@@ -421,6 +423,7 @@ section{
     min-width: 350px;
     max-width: 600px;
 /*     width: auto; */
+    opacity: .8;
     min-height: 480px;
     padding:;
     background: #282A2C;
@@ -639,7 +642,8 @@ section{
 
 }
 .containerSkills{
-  background: #000;
+  background: ;
+
   
 
 }
@@ -717,7 +721,27 @@ section{
     font-size:1.1em;
     overflow-y:hidden;
   }
+  .aboutcard {
+    width: 100vw;
+    top:280px;
+    opacity:0.8;
+    /* font-size:1.2em; */
+  }
+  .description{
+    font-size:1.2em;
+  }
 
+  .resume{
+    align-self: center;
+  }
+
+  .slideshow-container {
+    width:100vw;
+  }
+  #skills .containerSkills{
+    opacity:.8;
+    width:100vw;
+  }
 }
   
 

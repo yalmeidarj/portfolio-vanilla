@@ -107,3 +107,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+// Email.send(msg, {
+//     Host : "smtp.elasticemail.com",
+//     Username : "codeting21@gmail.com",
+//     Password : "03122806ydA",
+//     To : 'yalmeida.rj@gmail.com',
+//     From : "codeting21@gmail.com",
+//     Subject : "My Website: ",
+//     Body : msg,
+// }).then(
+//   message => alert(message)
+// );

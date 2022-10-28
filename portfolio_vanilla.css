@@ -9,7 +9,6 @@ body {
     width:100vw;
     background: #313131;
     overflow-x: hidden;
-/*     font-size:1em; */
 }
 .box {
     background: #313131;
@@ -23,35 +22,29 @@ section{
   /* margin-bottom:200px; */
 }
 .welcome {
-    /* top: 50%; */
-    position: static;
-    width:max-content;
-    height: 4.92em;
-    font-family: 'Inter';
-    color: #8B8B8C;
-    font-style: normal;
-    font-weight: 24em;
-    font-size:1.5rem;
-    
-    /* font-size: clamp(34px, 10vw, 34px); */
-/*     overflow-y:hidden; */
-    line-height: 2.5em;
-    padding-top:80vh;
-    bottom: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    
+  position: static;
+  width:max-content;
+  height: 4.92em;
+  font-family: 'Inter';
+  color: #8B8B8C;
+  font-style: normal;
+  font-weight: 24em;
+  font-size:1.5rem;
+  line-height: 2.5em;
+  padding-top:80vh;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .wrap {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content:center ;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content:center ;
+  align-items: center;
+  flex-wrap: wrap;
   
 }
     
@@ -63,7 +56,6 @@ section{
     display:flex;
     width: fit-content;
     font-size: 1.8em;
-    /* min-width: max-content; */
 }
 
 .welcome .button{
@@ -79,57 +71,46 @@ section{
     max-width: 980px;
     height: auto;
     max-height: 35px;
-
     background: #000000;
     border-radius: 6px;
-
 }
 .welcome .button:hover{
     color: #dbb121;
     box-shadow: 0 4px 8px 0 #7e6e30, 0 6px 20px 0 #7e6e30;
-    
 }
 .afterPage{
   width:100%;
-  height:40vh;
+  height:15rem;
 }
+
+/* About me */
 #aboutMe {
-    /* margin-top: 20px; */
-    height: 100vh;
-    background: #313131;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 15% 70% 15%;
-    justify-items: center;   
-    
-  
+  height: 100vh;
+  background: #313131;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 70% 15%;
+  justify-items: center;   
 }
 
 
 .navbar{
-    
     position: sticky;
     top: 0px;
-    /* left:7.5%; */
     z-index: 9;
     display: flex;
     justify-content:center;
     align-content:center;
     align-items: center;
-    
-    /* padding:5px; */
     border-radius: 6px;
     margin-bottom: 10em;
     min-width: 100%;
     max-width: 95%;
-    /* margin: 20px; */
     max-height: 50px;
     white-space: nowrap;
-    /* overflow: hidden; */
     background: #000000;
     opacity: 0.85;
     box-shadow: 0 1px 2px 0 #7e6e30, 0 1.5px 5px 0 #7e6e30;
-
 }
 .navbar a{
   margin:7%;
@@ -142,7 +123,6 @@ section{
   
 }
 .separator{
-  
   width: .8em;
   min-width:3px;
   height: 1.5em;
@@ -152,36 +132,31 @@ section{
 }
 .navbar a:hover{
     color: #7e6e30;
-  
 }
 .aboutcard{
     grid-column-start: 2;
     grid-row-start: 2;
     top: 10em;
-    margin-top: 10em;
     align-self: center;
     justify-content: center;
     align-content:center ;
     align-items: center; 
-    min-width: auto;
+    /* min-width: 38rem; */
+    width: 45rem;
     max-width: 1600px;
     height: auto;
     padding:;
-    padding-bottom:50px;
+    padding-bottom:5rem;
     border-radius: 31px;
     background: #282A2C;
     line-height:10.5px;
     opacity:0.8;
 }
 .container{
-  
   display: flex;
-  
   flex-wrap: wrap;
   justify-content: center;
   flex-flow: column wrap;
-/*   grid-template-columns: auto;
-  grid-template-rows: 67px auto auto; */
 }
 
 .picture{
@@ -189,8 +164,6 @@ section{
   margin-left: 2.1em;
   margin-top: 2.1em;
 
-  /* min-width: 10rem; */
-  /* width: 30%; */
   height:16rem;
   overflow: hidden;
 
@@ -210,44 +183,37 @@ section{
 .aboutTitle {
   max-height: 1.05em;
   margin-top: 1.05em;
-  margin-left:1.1em;
-  align-self: center;
-  grid-row-start: 2;
+  margin-left:1.5em;
+  grid-row-start: 3;
   color: #8B8B8C;
   font-family: 'Inter';
   font-style: normal;
-/*   font-weight: 400; */
   font-size: 1.8em;
-  line-height: .9em;
-  
+  line-height: 1.9em;
+  self-align: left;
 }
 
 .aboutTitle span {
   align-self: center;
-  font-size:60%;
+  /* font-size:60%; */
   white-space: nowrap;
   overflow: hidden;
-  color: #57554a;
+  color: #dbb121;
 }
 .resume{
-/*   grid-column-start: 3; */
-  grid-row-start: 2;
-/*   align-self: end; */
-  align-self: end;
-  
-  min-width: 5.5em;
-  margin-right: .7em;
-  height: 2.8em;
+
+  align-self: center;
+  margin: 5px;
+  min-width: 7.5em;
+  height: 1.8em;
   background: #000000;
   border-radius: 68px;
   color: #dbb121;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.em;
 }
 .resumeTxt{
-/*   width:2000px; */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -264,160 +230,26 @@ section{
   margin-right:.6em;
   font-size:1.1em;
   line-height:2em;
-/*   grid-column: 2 / span 3 ; */
   grid-row-start: 2;
   color: #fff;
   padding:1.5px;
   align-self: center;
 }
-
-#contact{
-    padding: px;
-    margin-top: 20px;
-    height: 100vh;
-    background: #313131;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-
-    grid-template-rows: 15% 70% 15%;
-    justify-items: center;
-
-  
-}
-.contactCard {
-    padding: 30px;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    margin-top: 10em;
-    align-self: center;
-    opacity: .9;
-    width: auto;
-    max-width: 600px;
-    width: auto;
-    min-height: 640px;
-    /* font-size:1.3em; */
-    padding:;
-/*     padding-bottom:50px; */
-    border-radius: 31px;
-    background: #282A2C;
-    grid-template-columns: 5% 25% 70%;
-    grid-template-rows: 40% 20% 40%;
-
-    align-items: stretch;
-}
-/* .messageMeTxt{
-  width: auto;
-  justify-content: end;
-  align-items: end;
-  
-} */
-
-.messageMeTxt h1 {
-  grid-column-start: 1;
-  
-  grid-row-start: 1;
-  width: auto;
-  height: auto;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3em;
-  line-height: 1.7em;
-  padding:.8em;
-  color: #FFFFFF;
-
-  justify-content: end;
-  
-  
-}
-
-.socialMedia {
-  display: flex;
-  justify-content: end;
-  grid-column-start: 3;
-  grid-row-start: 1; 
-  width:auto;
-  min-height: auto;
-  padding-top: .15em;
-  margin:.5em;
-  border-radius: 6px;
-}
-.socialMedia i {
-    padding: em;
-    left:100px;
-    font-size: 140%;
-    margin: .2em;
-    color:#7e6e30;
-    border-radius: 6px;
-    transition: all .2s ease-in-out;
-
-}
-.socialMedia i:hover {
-    transform: scale(1.2);
-    color:#dbb121;
-    box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
-}
-.email {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  width:99.4%;
-  height:24px;
-  grid-row-start: 2; 
-/*   background: #313131; */
-  border-radius: 31px;
-  border-style: hidden;
-  
- 
-}
-.email input {
-  border-radius: 31px;
-  width:98%;
-  height:110%;
-  background: #313131;
-  color: white;
-  
-}
-
-
- textarea {
-  margin-top:9px;
-  border-radius: 4px 4px 6px 6px;
-  background: #4B4D4F;
-  margin-left: 6px;
-  width:96.5%;
-  height:99%;
-  min-height:200px;
-  border-style: hidden;
-  color:white;
-  font-size:1.2em;
-  resize:none;
-  wrap:physical;
-  float: left;
-} 
-.sendButton {
-
-  padding-top:1.5em;
-  display:flex;
-  max-width: 240px;
-  height: 24px; 
-  justify-content:end;
-  padding-left: 60%;
-}
-.sendButton button{
-  
-  background:#000;
-  color: white;
-  width: 100%;
-  border-radius: 6px;
-  
-  
-}
-.sendButton button:hover{
+.getInTouch{
   color: #dbb121;
+  position: relative;
+  text-decoration: none;
 }
+
+.getInTouch:hover{
+  color: #7e6e30;
+  
+  text-decoration: none;
+}
+
+/* My work  */
 
 #myWork{
-    margin-top: 20px;
     height: 100vh;
     background: #313131;
     display: grid;
@@ -431,16 +263,15 @@ section{
     grid-column-start: 2;
     grid-row-start: 2;
     margin-top: 10em;
-    min-width: 350px;
-    max-width: 600px;
-/*     width: auto; */
+    width: 50rem;
+    /* max-width: 600px; */
     opacity: .8;
     min-height: 480px;
     padding:;
     background: #282A2C;
-    width: 200px;
+    /* width: 600px; */
     height:auto;
-    position: relative;
+    /* position: relative; */
     display:flex;
     justify-content: center;
     color: white;
@@ -619,9 +450,7 @@ section{
 		 	-ms-transform: rotate3d(0,1,0,-180deg);
 		 			transform: rotate3d(0,1,0,-180deg);
 }
-
-
-
+/* Skills */
 #skills {
 
     margin-top: 20px;
@@ -638,8 +467,8 @@ section{
     grid-column-start: 2;
     grid-row-start: 2;
     min-width: ;
-    width:400px;
-    max-width: 900px;
+    max-width: 50rem;
+    /* max-width: 900px; */
     min-height: 550px;
     padding:20px;
     opacity: 0.83;
@@ -677,8 +506,146 @@ section{
 }
 .iconskills:hover{
   transform: scale(1.6);
-/*     color:#7e6e30; */
 }
+
+/* Contact */
+#contact{
+    padding: px;
+    margin-top: 20px;
+    height: 100vh;
+    background: #313131;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    grid-template-rows: 15% 70% 15%;
+    justify-items: center;
+
+  
+}
+.contactCard {
+    padding: 30px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 10em;
+    align-self: center;
+    opacity: .9;
+    width: auto;
+    max-width: 50rem;
+    width: auto;
+    min-height: 640px;
+    padding:;
+    border-radius: 31px;
+    background: #282A2C;
+    grid-template-columns: 5% 25% 70%;
+    grid-template-rows: 40% 20% 40%;
+    align-items: stretch;
+}
+
+.messageMeTxt h1 {
+  grid-column-start: 1;
+  
+  grid-row-start: 1;
+  width: auto;
+  height: auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  padding:.8em;
+  color: #FFFFFF;
+
+  justify-content: end;
+  
+  
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: end;
+  grid-column-start: 3;
+  grid-row-start: 1; 
+  width:auto;
+  min-height: auto;
+  padding-top: .15em;
+  margin:.5em;
+  border-radius: 6px;
+}
+.socialMedia i {
+    padding: em;
+    left:100px;
+    font-size: 140%;
+    margin: .2em;
+    color:#7e6e30;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+
+}
+.socialMedia i:hover {
+    transform: scale(1.2);
+    color:#dbb121;
+    box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
+}
+.email {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width:99.4%;
+  height:24px;
+  grid-row-start: 2; 
+
+  border-radius: 31px;
+  border-style: hidden;
+  
+ 
+}
+.email input {
+  border-radius: 31px;
+  width:98%;
+  height:110%;
+  background: #313131;
+  color: white;
+  
+}
+
+
+ textarea {
+  margin-top:9px;
+  border-radius: 4px 4px 6px 6px;
+  background: #4B4D4F;
+  margin-left: 6px;
+  width:96.5%;
+  height:99%;
+  min-height:200px;
+  border-style: hidden;
+  color:white;
+  font-size:1.2em;
+  resize:none;
+  wrap:physical;
+  float: left;
+} 
+.sendButton {
+
+  padding-top:1.5em;
+  display:flex;
+  max-width: 240px;
+  height: 24px; 
+  justify-content:end;
+  padding-left: 60%;
+}
+.sendButton button{
+  
+  background:#000;
+  color: white;
+  width: 100%;
+  border-radius: 6px;
+  
+  
+}
+.sendButton button:hover{
+  color: #dbb121;
+}
+
+
 @media only screen and (max-width: 780px) {
   .picture {
     font-size:85%;
@@ -707,6 +674,9 @@ section{
   .navbar {
     font-size: 80%;
   }  
+  .aboutcard{
+    min-width: 35rem;
+  }
   .contactCard {
     margig: 0em;
     margin-top: 0em;   
@@ -714,7 +684,7 @@ section{
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 481px) {
 
   .navbar{
     margin: 0;
@@ -732,12 +702,16 @@ section{
     font-size:1.1em;
     overflow-y:hidden;
   }
+  .afterPage {
+
+  height:20rem;
+  }
   .aboutcard {
-    width: 100vw;
+    min-width: 35rem;
     top:280px;
     opacity:0.8;
-    /* font-size:1.2em; */
   }
+
   .description{
     font-size:1.2em;
   }
@@ -752,6 +726,11 @@ section{
   #skills .containerSkills{
     opacity:.8;
     width:100vw;
+    overflow: hidden;
+  }
+
+  .contactCard {
+    width: 100vw;
   }
 }
   

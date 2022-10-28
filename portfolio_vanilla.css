@@ -277,7 +277,7 @@ section{
     width: 50rem;
     /* max-width: 600px; */
     opacity: .8;
-    min-height: 480px;
+    min-height: 540px;
     padding:;
     background: #282A2C;
     /* width: 600px; */
@@ -306,10 +306,10 @@ section{
 }
 
 .dots{
-  margin-top: .2em;  
+  margin-top: 33.2em;  
   min-width: 10em;
   height: 20px;
-  margin:5px;
+  /* margin:0px; */
   grid-column-start: 1;
   grid-row-start: 2;
   color: #949494;
@@ -329,21 +329,27 @@ section{
 }
 
 .prev{
-  margin: .4em;
+  margin: 1.4em;
+  min-width:150%;
+  margin-bottom: 150%;
   font-size: 2em;
-  padding-top: 10em;
+  self-align: left;
 }
 
 .prev:hover{
   color: #7e6e30;
+  cursor: pointer;
 }
 .next{
-  margin: .4em;
+  min-width:150%;
+  margin: 1.4em;
   font-size: 2em;
+  self-align: right;
 }
 
 .next:hover{
   color: #7e6e30;
+  cursor: pointer;
 }
 .outer-wrap {
   width: 100%;
@@ -431,6 +437,7 @@ section{
 .card-back img {
   max-width: 100%;
   height: auto;
+  margin: 10px;
 }
 .card-back-title {
   position: absolute;
@@ -448,19 +455,46 @@ section{
   margin: -1em 0 0;
 }
 .work-number {
-  position: absolute; 
-  bottom: 2%; right: 2%;
-  display:block;
-  color: #fff;
-  font-family:futura,sans-serif;
+  min-width: 10em;
+  margin-left: 78px;
+  margin-right: -7px;
+  border-radius: 31px;
+  font-size: 90%;
+  color: #dbb121;
+  box-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #7e6e30;
+
 }
-.card-wrap:hover .card-body {
+
+.work-number {
+  cursor: pointer;
+}
+/* .card-wrap:hover .card-body {
 	-webkit-transform: rotate3d(0,1,0,-180deg);
 		 -moz-transform: rotate3d(0,1,0,-180deg);
 		 	 -o-transform: rotate3d(0,1,0,-180deg);
 		 	-ms-transform: rotate3d(0,1,0,-180deg);
 		 			transform: rotate3d(0,1,0,-180deg);
+} */
+
+.projectInfo{
+  font-size: 1.3em;
 }
+.projectTitle{
+  color: #dbb121;
+}
+
+.projectDescription{
+  /* color:black; */
+}
+
+.projectIcons{
+  font-size:150%;
+}
+
+.numbertext{
+  self-align: center;
+}
+
 /* Skills */
 #skills {
 

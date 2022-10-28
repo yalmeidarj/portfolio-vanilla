@@ -306,10 +306,8 @@ section{
 }
 
 .dots{
-  margin-top: 33.2em;  
   min-width: 10em;
   height: 20px;
-  /* margin:0px; */
   grid-column-start: 1;
   grid-row-start: 2;
   color: #949494;
